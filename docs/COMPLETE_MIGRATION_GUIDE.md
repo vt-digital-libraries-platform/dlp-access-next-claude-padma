@@ -109,7 +109,7 @@ Page becomes interactive
 
 ---
 
-## Foundation Setup
+## Day 1: Foundation Setup
 
 ### Goal
 
@@ -273,7 +273,7 @@ const { customKey } = router.query; // customKey = "ms1990_025"
 
 ---
 
-## Navigation & Bug Fixes
+## Day 2: Navigation & Bug Fixes
 
 ### Goal
 
@@ -565,7 +565,7 @@ PORT=3001 npm start
 
 ---
 
-## Static Pages & Hero Banner
+## Day 3: Static Pages & Hero Banner
 
 ### Goal
 
@@ -855,7 +855,7 @@ Like finding books in a library:
 
 ---
 
-## Documentation & Deployment
+## Day 4: Documentation & Deployment
 
 ### Goal
 
@@ -1599,7 +1599,7 @@ src/images/hero.jpg     →  ❌ Wrong folder!
 ### What We Accomplished
 
 ```
-Day 1: Foundation
+Foundation
 ├── ✅ Set up Next.js project structure
 ├── ✅ Converted 5 components from class to functional
 ├── ✅ Implemented dynamic routing
