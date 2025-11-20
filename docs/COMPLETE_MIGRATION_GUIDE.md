@@ -6,16 +6,16 @@
 
 ## 📚 Table of Contents
 
-1. [Project Overview](#project-overview)
-2. [What is Migration?](#what-is-migration)
-3. [Why We Migrated](#why-we-migrated)
+1. [Project Overview](#-project-overview)
+2. [What is Migration?](#-what-is-migration)
+3. [Why We Migrated](#-why-we-migrated)
 4. [Day 1: Foundation Setup](#day-1-foundation-setup)
 5. [Day 2: Navigation & Bug Fixes](#day-2-navigation--bug-fixes)
 6. [Day 3: Static Pages & Hero Banner](#day-3-static-pages--hero-banner)
 7. [Day 4: Documentation & Deployment](#day-4-documentation--deployment)
-8. [Key Concepts Explained](#key-concepts-explained)
-9. [Common Issues & Solutions](#common-issues--solutions)
-10. [Glossary](#glossary)
+8. [Key Concepts Explained](#-key-concepts-explained)
+9. [Common Issues & Solutions](#-common-issues--solutions)
+10. [Glossary](#-glossary)
 
 ---
 
