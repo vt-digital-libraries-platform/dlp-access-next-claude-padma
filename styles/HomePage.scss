@@ -1,0 +1,124 @@
+.home-wrapper {
+  padding-top: 50px;
+}
+
+.home-featured-image-wrapper {
+  position: relative;
+}
+
+.home-wrapper #home-site-title-wrapper {
+  width: 100%;
+  max-height: 500px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-bottom: 23px;
+}
+
+.home-wrapper #home-site-title-wrapper h1 {
+  color: white;
+  font-size: 25px;
+  font-family: "gineso-condensed", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-shadow: -2px 3px 5px #000000b5;
+}
+
+.home-statement-wrapper {
+  width: 100%;
+  padding-top: 40px;
+}
+
+.home-statement-wrapper h2 {
+  font-family: "gineso-condensed", sans-serif;
+  text-align: center;
+  font-size: 2.1875rem;
+}
+
+.home-statement {
+  font-family: "Acherus", sans-serif;
+}
+
+.home-statement a,
+.home-statement a:visited {
+  color: var(--hokieOrange);
+}
+.home-statement a:hover,
+.home-statement a:focus,
+.home-statement a:active {
+  color: var(---hokieOrangeHover);
+}
+
+.home-wrapper .home-search-wrapper {
+  width: 100%;
+  padding: 0 10px 0 10px;
+  transform: translate(0, -23px);
+}
+
+.home-nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 0px;
+  justify-content: center;
+}
+
+.home-nav-links a {
+  color: var(--themeHighlightColor);
+  font-family: "Acherus", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+  padding: 5px;
+  line-height: 1.4285em;
+  border: 2px solid var(--themeHighlightColor);
+  border-radius: 0px;
+  width: 11.313rem;
+  margin: 5px 20px;
+}
+
+.home-nav-links a:hover,
+.home-nav-links a:focus {
+  color: white;
+  background-color: var(--themeHighlightColor);
+  text-decoration: none;
+}
+
+.loading-screen {
+  width: 100%;
+  .loading-content {
+    width: 250px;
+    margin-left: calc(50% - (250px / 2));
+    margin-top: calc(25% - (200px / 2));
+    img {
+      width: 100%;
+    }
+    p {
+      font-family: "Acherus", sans-serif;
+      font-size: 22px;
+    }
+    text-align: center;
+  }
+}
+
+@media (min-width: 576px) {
+  .home-wrapper #home-site-title-wrapper {
+    font-size: 30px;
+    width: 60%;
+  }
+
+  .home-statement-wrapper {
+    padding: 40px 40px 0px 40px;
+  }
+
+  .home-wrapper .home-search-wrapper {
+    padding: 0 40px 0 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .home-wrapper #home-site-title-wrapper h1 {
+    font-size: var(--titleFontSize);
+  }
+}

@@ -1,0 +1,430 @@
+div > div.MuiTreeItem-iconContainer > svg {
+  color: var(--dark-gray);
+}
+
+div.nav-row {
+  background-color: var(--light-gray);
+  padding: 10px 15px;
+}
+
+.top-content-row {
+  margin-top: 40px !important;
+}
+
+.top-content-row .collection-img-col {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .top-content-row .collection-img-col {
+    display: block;
+    height: 300px;
+    text-align: center;
+  }
+}
+
+.top-content-row .collection-img-col img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+h1.collection-title {
+  font-family: "gineso-condensed", sans-serif;
+  font-size: 1.563rem;
+  font-weight: 400;
+  display: block;
+}
+
+h2.subcollection-title {
+  font-family: "gineso-condensed", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  display: block;
+}
+
+div.post-heading {
+  font-family: "gineso-condensed", sans-serif;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--dark-gray);
+}
+
+span.item-count:after,
+span.creator:after {
+  content: "\00a0\00a0•\00a0\00a0";
+}
+
+.description {
+  padding: 15px 0 25px 0;
+}
+
+.description h2.introduction {
+  font-family: "gineso-condensed", sans-serif;
+  font-size: 1.125rem;
+}
+
+.description .more,
+.description .less,
+.description .more:hover,
+.description .less:hover,
+.description .more:visited,
+.description .less:visited {
+  display: inline-block;
+  color: var(--hokieOrange);
+  border: none;
+  background-color: transparent;
+}
+
+.description.trunc .less {
+  display: none;
+}
+
+.description.full .more {
+  display: none;
+}
+
+.feed-links {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+@media only screen and (min-width: 992px) {
+  .feed-links {
+    border-bottom: 1px solid rgb(117, 120, 123);
+    padding-bottom: 40px;
+  }
+}
+
+.feed-links li {
+  margin: 0 10px 10px 0;
+  height: 40px;
+  display: flex;
+}
+
+.feed-links li.custom-badge {
+  border: 1px solid var(--dark-gray);
+  border-radius: 10px;
+}
+
+.feed-links img {
+  height: 100%;
+  width: auto;
+}
+
+.feed-links .custom-badge img {
+  margin-right: 10px;
+}
+
+.feed-links .custom-badge .fa-rss {
+  margin-right: 10px;
+}
+
+.feed-links .badge-outline {
+  border: 1px solid var(--dark-gray);
+  border-radius: 10px;
+  padding: 2px;
+}
+
+.feed-links a {
+  height: 100%;
+  width: 100%;
+}
+
+.feed-links a.border-square {
+  border-radius: 6px;
+}
+
+.feed-links a.border-curved {
+  border-radius: 10px;
+}
+
+.feed-links a:hover,
+.feed-link a:active,
+.feed-links a:focus,
+.feed-links button:hover {
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.4);
+}
+
+.feed-links .custom-badge a {
+  font-family: "gineso-condensed", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.feed-links .custom-badge a,
+.feed-links .custom-badge a:visited {
+  color: var(--hokieMaroon);
+}
+
+.feed-links .custom-badge a:hover,
+.feed-links .custom-badge a:focus,
+.feed-links .custom-badge a:active {
+  text-decoration: none;
+}
+
+.feed-links button {
+  color: var(--hokieMaroon);
+  background-color: var(--light-gray);
+  font-family: "gineso-condensed", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  border: 1px solid var(--dark-gray);
+  border-radius: 10px;
+}
+
+.feed-links button span {
+  margin-left: 5px;
+}
+
+.mid-content-row.row {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px 10px;
+  background-color: var(--light-gray);
+}
+.mid-content-row.list-view {
+  background-color: white;
+  padding: 0px;
+}
+
+.mid-content-row a,
+.mid-content-row a:visited {
+  color: var(--hokieOrange);
+}
+
+.mid-content-row a:hover,
+.mid-content-row a:focus,
+.mid-content-row a:active {
+  color: var(--hokieOrangeHover);
+}
+
+.mid-content-row .details-section {
+  line-height: 1.2em;
+  border-bottom: 1px solid var(--dark-gray);
+  border-right: none;
+}
+.mid-content-row.list-view .details-section {
+  background-color: var(--light-gray);
+  padding: 20px;
+}
+
+@media only screen and (min-width: 992px) {
+  .mid-content-row {
+    padding: 20px;
+  }
+
+  .mid-content-row .details-section {
+    border-right: 1px solid var(--dark-gray);
+    border-bottom: none;
+  }
+  .mid-content-row.list-view .details-section {
+    border-bottom: 1px solid var(--dark-gray);
+    border-right: none;
+  }
+}
+
+.mid-content-row .details-section-header {
+  width: 100%;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.mid-content-row h2.details-section-header {
+  font-family: "gineso-condensed", sans-serif;
+  font-size: 1.3125rem;
+}
+
+.mid-content-row div.accordion.ui .title {
+  font-family: "gineso-condensed", sans-serif;
+  font-size: 1.3125rem;
+}
+
+.mid-content-row div.accordion.ui {
+  background-color: var(--light-gray);
+}
+
+.mid-content-row div.accordion.ui div.details-section {
+  padding: 0px 20px 20px 20px;
+}
+
+.mid-content-row div.accordion.ui div.details-section-content-grid {
+  margin-top: 0px;
+}
+
+.mid-content-row .details-section-content-grid {
+  margin-top: 20px;
+}
+
+.mid-content-row .details-section-content-grid td,
+.mid-content-row .details-section-content-grid th {
+  display: block;
+  padding: 0;
+  line-height: 1.25em;
+}
+
+.mid-content-row .details-section-content-grid td {
+  margin-bottom: 15px;
+}
+
+.mid-content-row div.details-section-content-grid {
+  margin-bottom: 15px;
+}
+.mid-content-row.list-view div.details-section-content-grid {
+  margin-bottom: 0px;
+}
+
+@media only screen and (min-width: 992px) {
+  .mid-content-row .details-section-content-grid {
+    margin-bottom: 0px;
+  }
+}
+
+.mid-content-row .details-section-content-grid .collection-detail-key {
+  font-family: "gineso-condensed", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.mid-content-row .details-section-content-grid .collection-detail-value {
+  font-family: "Acherus", sans-serif;
+  font-size: 1rem;
+}
+
+.mid-content-row .collection-detail-value.identifier {
+  -ms-word-break: break-all;
+  word-break: break-all;
+}
+
+.mid-content-row div.subcollections-section {
+  margin-top: 30px;
+  padding-left: 12px;
+  line-height: 1.2em;
+}
+@media only screen and (min-width: 992px) {
+  .mid-content-row div.subcollections-section {
+    margin-top: 0px;
+  }
+}
+.mid-content-row.list-view div.subcollections-section {
+  padding: 20px;
+  background-color: var(--light-gray);
+}
+
+div.collection-items-grid {
+  display: inline-grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  width: 100%;
+}
+
+div.collection-item {
+  width: 250px;
+  min-height: 300px;
+  margin: 0 auto;
+}
+
+div.collection-item .item-image {
+  display: inline-block;
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--light-gray);
+}
+
+div.collection-item .item-image .image-container {
+  border: none;
+}
+
+div.collection-item .item-image img {
+  width: 250px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.collection-items-grid .collection-item .collection-item-wrapper a,
+.collection-items-grid
+  .collection-item
+  .collection-item-wrapper
+  a:visited
+  .collection-items-grid
+  .collection-item
+  .collection-item-wrapper
+  a:hover,
+.collection-items-grid .collection-item .collection-item-wrapper a:focus,
+.collection-items-grid .collection-item .collection-item-wrapper a:active {
+  color: black;
+  text-decoration: none;
+}
+
+.collection-items-grid .item-info {
+  padding: 10px;
+}
+
+.collection-items-grid .item-info h3 {
+  font-family: "gineso-condensed", sans-serif;
+  color: black;
+  font-size: 1.15rem;
+  font-weight: 400;
+}
+
+.mid-content-row.list-view div.collection-items-list-wrapper {
+  margin-top: 0px;
+}
+.collection-items-list-wrapper h2 {
+  font-family: "gineso-condensed", sans-serif;
+  font-size: 1.3125rem;
+}
+
+.collection-items-list-wrapper .results-text {
+  font-family: "gineso-condensed", sans-serif;
+}
+
+.collection-items-list-wrapper .subCollectionList a,
+.collection-items-list-wrapper .subCollectionList a:visited {
+  font-family: "gineso-condensed", sans-serif;
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .collection-items-list-wrapper .collection-items-list div.collection-img img {
+    width: 150px;
+    height: 108px;
+    object-fit: cover;
+  }
+
+  .collection-items-list-wrapper .collection-items-list div.collection-details {
+    width: calc(100% - 182px);
+  }
+}
+
+.collection-items-list-wrapper .display-option-container {
+  display: flex;
+  justify-content: flex-end;
+  font-family: "gineso-condensed", sans-serif;
+  font-size: 1.14em;
+}
+
+.collection-items-list-wrapper .sort-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: black;
+}
+
+.collection-items-list-wrapper .sort-btn {
+  padding: 11px !important;
+  margin: 0 !important;
+}
+
+.collection-items-list-wrapper .sort-btn .sort-btn-icon {
+  font-size: 0.98rem;
+}

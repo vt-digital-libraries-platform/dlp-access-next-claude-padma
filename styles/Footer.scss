@@ -1,0 +1,309 @@
+/*Copyright bar*/
+.page__footer-copyright {
+  display: flex;
+  height: 50px;
+  background-color: black;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8em;
+  text-align: center;
+  line-height: 1em;
+  font-family: Acherus Grotesque, sans-serif;
+}
+
+/*VT Libs custom footer */
+body {
+  margin: 0;
+}
+
+footer .footer-content.active {
+  padding: 0;
+  padding-bottom: 40px;
+  background-color: white;
+}
+
+footer.lib-ft {
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-family: Gineso, sans-serif;
+  padding: 0;
+}
+
+footer.lib-ft h3 {
+  color: #020202;
+  font-size: 1em;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  font-family: Acherus Grotesque, sans-serif;
+  font-weight: 400;
+}
+
+footer.lib-ft a {
+  color: #8b1f41 !important;
+  text-decoration: none;
+  font-size: 0.8em;
+  padding: 0.5rem;
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  line-height: normal;
+  text-align: center;
+  font-family: Acherus Grotesque, sans-serif;
+  font-weight: 400;
+}
+
+footer.lib-ft a:hover {
+  text-decoration: underline;
+}
+
+footer.lib-ft a:focus {
+  outline-color: #75787b;
+  outline-offset: 1px;
+  outline-style: dashed;
+  outline-width: 2px;
+}
+
+footer.lib-ft p {
+  color: #020202;
+  font-size: 0.8em;
+  padding: 0.5rem;
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  line-height: normal;
+  font-family: Acherus Grotesque, sans-serif;
+  font-weight: 400;
+}
+
+footer.lib-ft .lib-cc a.fed-link img.fed-img {
+  width: auto;
+  height: 30px;
+}
+
+.swoop {
+  width: 100%;
+  margin-bottom: -2px;
+}
+
+.swoop img {
+  width: 100%;
+  border: 0;
+}
+
+.info-row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.lib-names {
+  order: 2;
+}
+
+.lib-give {
+  order: 1;
+}
+
+.lib-give .give-button {
+  color: #fff;
+  background-color: #8b1f41;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  font-family: Acherus, sans-serif;
+  letter-spacing: 1px;
+}
+
+.lib-give .social-icons {
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+}
+
+.lib-give .social-icons a.footer-social-links {
+  padding: 1.5rem;
+  background-color: #8b1f41;
+  width: 30px;
+  height: 30px;
+  border-radius: 35px;
+  margin: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.lib-give .social-icons a.footer-social-links svg {
+  width: 30px;
+  height: 30px;
+  color: white;
+}
+
+.lib-contact {
+  order: 3;
+}
+
+.lib-contact,
+.lib-give,
+.lib-names,
+.lib-int-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 1.5rem 0;
+}
+
+footer.lib-ft .lib-cc p.cc-text {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.7em;
+  font-style: italic;
+}
+
+@media screen and (min-width: 765px) {
+  footer.lib-ft a,
+  footer.lib-ft p {
+    font-size: 0.8em;
+    padding: 0.2em;
+  }
+
+  footer.lib-ft a {
+    width: auto;
+  }
+
+  footer.lib-ft .info-row {
+    justify-content: space-around;
+  }
+
+  footer.lib-ft .info-row h3 {
+    font-size: 1.2em;
+    margin-bottom: 0.2em;
+  }
+
+  footer.lib-ft .lib-names {
+    order: 1;
+    align-items: flex-start;
+    padding-left: 1em;
+  }
+
+  footer.lib-ft .lib-names a {
+    padding-left: 0;
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  footer.lib-ft .lib-give {
+    order: 2;
+  }
+
+  footer.lib-ft .lib-give a .give-button {
+    color: #fff;
+    background-color: #8b1f41;
+    border: none;
+    border-radius: 3px;
+    padding: 0.8em 2em;
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-bottom: 2em;
+  }
+
+  footer.lib-ft .lib-give .social-icons a.footer-social-links {
+    padding: 1em;
+    background-color: #8b1f41;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+  }
+
+  footer.lib-ft .lib-give .social-icons a.footer-social-links svg {
+    width: 30px;
+    height: 30px;
+    color: white;
+  }
+
+  footer.lib-ft .lib-contact {
+    order: 3;
+    align-items: flex-end;
+    padding-right: 1em;
+  }
+
+  footer.lib-ft .lib-contact p {
+    padding-right: 0;
+    justify-content: flex-end;
+    text-align: right;
+  }
+
+  footer.lib-ft .lib-names,
+  .lib-give,
+  .lib-contact {
+    width: 30%;
+    padding-bottom: 0.5em;
+  }
+
+  footer.lib-ft .lib-int-links {
+    flex-direction: row;
+    padding: 0.8em;
+    justify-content: center;
+    width: auto;
+  }
+
+  footer.lib-ft .lib-int-links a {
+    padding: 0;
+  }
+
+  footer.lib-ft .lib-int-links a:last-child::after {
+    content: none;
+  }
+
+  footer.lib-ft .lib-int-links a::after {
+    content: "|";
+    padding: 0 0.5em;
+  }
+
+  footer.lib-ft .lib-cc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  footer.lib-ft .lib-cc a.cc-link img {
+    height: 30px;
+    width: auto;
+    margin: 1em;
+  }
+
+  footer.lib-ft .lib-cc p.cc-text {
+    width: auto;
+    font-size: 0.8rem;
+  }
+
+  footer.lib-ft .lib-cc p.cc-text a {
+    font-size: 0.8rem;
+    padding: 0 0.25em;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  footer.lib-ft .lib-contact {
+    padding-right: 2.5em;
+  }
+
+  footer.lib-ft .lib-names {
+    padding-left: 2.5em;
+  }
+}

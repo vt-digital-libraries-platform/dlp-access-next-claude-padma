@@ -1,0 +1,206 @@
+// Collections Browse Page Styles - CSS Module
+// Uses CSS variables defined in globals.scss
+
+// Page Layout
+.pageContainer {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.loadingText {
+  font-size: 18px;
+  color: var(--medium-gray);
+}
+
+// Header
+.headerSection {
+  margin-bottom: 30px;
+  border-bottom: 2px solid var(--hokieOrange);
+  padding-bottom: 15px;
+}
+
+.pageTitle {
+  font-family: "gineso-condensed", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--hokieOrange);
+  margin-bottom: 10px;
+}
+
+.totalText {
+  font-size: 16px;
+  color: var(--medium-gray);
+}
+
+// Controls
+.controlsContainer {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.controlGroup {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.controlLabel {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--dark-gray);
+}
+
+.dropdown {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid var(--border-gray);
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+  
+  &:hover {
+    border-color: var(--hokieOrange);
+  }
+  
+  &:focus {
+    outline: 2px solid var(--hokieOrange);
+    outline-offset: 2px;
+  }
+}
+
+// Pagination
+.paginationContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.pageButton {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  background-color: var(--hokieOrange);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  
+  &:hover:not(:disabled) {
+    background-color: var(--hokieOrangeHover);
+  }
+  
+  &:disabled {
+    background-color: var(--border-gray);
+    cursor: not-allowed;
+  }
+}
+
+.pageInfo {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--dark-gray);
+}
+
+// Collections Grid
+.collectionsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.noResults {
+  text-align: center;
+  padding: 60px 20px;
+  font-size: 18px;
+  color: var(--medium-gray);
+}
+
+// Collection Card
+.cardLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid var(--border-gray);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(99, 0, 49, 0.15);
+  }
+}
+
+.thumbnailContainer {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background-color: var(--light-gray);
+}
+
+.thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardContent {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cardTitle {
+  font-family: "gineso-condensed", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--hokieOrange);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.cardDescription {
+  font-family: "Acherus", sans-serif;
+  font-size: 14px;
+  color: var(--medium-gray);
+  line-height: 1.6;
+  margin: 0;
+}
+
+// Footer
+.footerNote {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-gray);
+  text-align: center;
+}
+
+.footerText {
+  font-size: 14px;
+  color: var(--medium-gray);
+}

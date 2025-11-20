@@ -1,0 +1,49 @@
+.breadcrumbs-wrapper {
+  position: relative;
+  display: block;
+  // background-color: var(--light-gray);
+  padding: 5px 10px;
+  overflow-y: hidden;
+  font-family: "gineso-condensed", sans-serif;
+}
+.breadcrumbs-wrapper ol {
+  margin: 0;
+  padding: 0;
+  margin-left: 15px;
+  list-style-type: none;
+}
+
+.breadcrumbs-wrapper ol li {
+  position: relative;
+  display: block;
+  float: left;
+}
+
+.breadcrumbs-wrapper ol li .breadcrumb-slash {
+  margin: 0 5px;
+}
+
+.breadcrumbs-wrapper ol li a.vt-breadcrumbs-link,
+.breadcrumbs-wrapper ol li a.vt-breadcrumbs-link:visited {
+  color: black;
+}
+.breadcrumbs-wrapper ol li:last-child a.vt-breadcrumbs-link,
+.breadcrumbs-wrapper ol li:last-child a.vt-breadcrumbs-link:visited {
+  color: var(--hokieOrange);
+}
+
+.breadcrumbs-wrapper ol li:last-child .breadcrumb-slash {
+  display: none;
+}
+
+#content-wrapper .breadcrumbs-wrapper a:focus {
+  outline-color: black;
+  outline-offset: 1px;
+  outline-style: solid;
+}
+
+@media (max-width: 600px) {
+  .breadcrumbs-wrapper ol li {
+    font-size: x-small;
+  }
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+
+    <link rel="shortcut icon" href="//assets.cms.vt.edu/favicon/favicon.ico" />
+
+    <script src="https://www.assets.cms.vt.edu/jquery/archives/jquery-3.4.latest.min.js"></script>
+
+    <script src="https://www.assets.cms.vt.edu/js/popper/archives/1.12.9/popper.min.js"></script>
+
+    <script src="https://www.assets.cms.vt.edu/bootstrap/archives/4.latest/js/bootstrap.min.js"></script>
+
+    <script defer="" src="https://www.assets.cms.vt.edu/font-awesome/archives-pro/5.latest/js/all.min.js"></script>
+
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js"></script>
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+    <script src="https://lib.vt.edu/content/dam/lib_vt_edu/vtlib-footer.js"></script>
+
+    <!-- bootstrap responsive tabs -->
+    <script src="https://www.assets.cms.vt.edu/bootstrap/bootstrap-responsive-tabs/js/responsive-tabs.js"></script>
+    
+    <link type="text/css" rel="stylesheet" href="%PUBLIC_URL%/css/root.css"/>
+
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+
+
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+
+
+
+
+
+<!-- ///////////////////////////////////////////// -->
+<!-- MAIN CONTENT -->
+<!-- ///////////////////////////////////////////// -->
+
+    <div id="root">
+    
+    </div>
+
+<!-- ///////////////////////////////////////////// -->
+<!-- END MAIN CONTENT -->
+<!-- ///////////////////////////////////////////// -->
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jsrender/0.9.90/jsrender.min.js"></script>
+
+<!-- ///////////////////////////////////////////// -->
+<!-- UNIVERSAL ACCESS TEMPLATES -->
+<!-- ///////////////////////////////////////////// -->
+<script id="uaImg" type="text/x-jsrender">
+  <img {{props attrs}}{{:key}}="{{:prop}}"{{/props}} />
+</script>
+<script id="uaSubText" type="text/x-jsrender">
+  <span {{props attrs}}{{:key}}="{{:prop}}"{{/props}}>
+    {{:text}}
+  </span>
+</script>
+<script id="uaText" type="text/x-jsrender">
+  <span {{props attrs}}{{:key}}="{{:prop}}"{{/props}}>
+    {{:text}}
+    {{if items}}
+      {{for items}}
+        {{include content tmpl="#uaSubText"/}}
+      {{/for}}
+    {{/if}}
+  </span>
+</script>
+<script id="uaButton" type="x-jsrender">
+  <button {{props attrs}}{{:key}}="{{:prop}}"{{/props}}>
+      {{for items}}
+          {{if content.el === "img"}}
+              {{include content tmpl="#uaImg"/}}
+          {{else}}
+              {{include content tmpl="#uaText"/}}
+          {{/if}}
+      {{/for}}
+  </button>
+</script>
+<script id="uaLink" type="x-jsrender">
+  <a {{props attrs}}{{:key}}="{{:prop}}"{{/props}}>
+      {{for items}}
+          {{if content.el === "img"}}
+              {{include content tmpl="#uaImg"/}}
+          {{else}}
+              {{include content tmpl="#uaText"/}}
+          {{/if}}
+      {{/for}}
+  </a>
+</script>
+<script id="uaMenu" type="x-jsrender">
+  {{for items}}
+  <li {{props attrs}}{{:key}}="{{:prop}}"{{/props}}>
+      {{if content.el === "a"}}
+          {{include content tmpl="#uaLink" /}}
+      {{else}}
+          {{include content tmpl="#uaButton" /}}
+      {{/if}}
+  </li>
+  {{/for}}
+</script>
+
+<script type="text/javascript" src="%PUBLIC_URL%/js/one.js"></script>
+
+<script type="text/javascript">
+
+  $.ajax({
+    url: "uaMenu.json"
+  }).done(function(data){
+    if ($.template) $("#uaRender").html($.templates("#uaMenu").render(data));
+  })
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>

@@ -1,0 +1,70 @@
+// Breadcrumbs Component Styles - CSS Module
+// Uses CSS variables defined in globals.scss
+.breadcrumbsWrapper {
+  position: relative;
+  display: block;
+  padding: 5px 10px;
+  overflow-y: hidden;
+  font-family: "gineso-condensed", sans-serif;
+  
+  ol {
+    margin: 0;
+    padding: 0;
+    margin-left: 15px;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  li {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    
+    .breadcrumbSlash {
+      margin: 0 5px;
+      color: var(--dark-gray);
+    }
+    
+    a {
+      color: black;
+      text-decoration: none;
+      transition: color 0.2s ease;
+      
+      &:visited {
+        color: black;
+      }
+      
+      &:hover {
+        color: var(--hokieMaroon);
+        text-decoration: underline;
+      }
+      
+      &:focus {
+        outline-color: black;
+        outline-offset: 1px;
+        outline-style: solid;
+      }
+    }
+    
+    &:last-child {
+      a,
+      a:visited {
+        color: var(--hokieOrange);
+        font-weight: 600;
+      }
+      
+      .breadcrumbSlash {
+        display: none;
+      }
+    }
+  }
+}
+
+// Responsive
+@media (max-width: 600px) {
+  .breadcrumbsWrapper ol li {
+    font-size: x-small;
+  }
+}

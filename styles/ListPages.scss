@@ -1,0 +1,157 @@
+div.collection-entry {
+  position: relative;
+  display: block;
+  margin: 15px 0 15px 0;
+}
+
+.collection-entry a,
+.collection-entry a:visited {
+  color: var(--hokieOrange);
+}
+
+.collection-entry a:hover,
+.collection-entry a:focus,
+.collection-entry a:active {
+  color: var(--hokieOrangeHover);
+}
+
+.collection-entry .collection-details h3 {
+  color: black;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+h4.collection-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+div.collection-img {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+div.collection-img img {
+  width: 150px;
+  height: 108px;
+  object-fit: cover;
+}
+
+div.collection-details {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% - 180px);
+}
+
+div.collection-details h3 {
+  font-size: 1.0625rem;
+  font-family: "gineso-condensed", sans-serif;
+  margin-bottom: 0.25rem;
+}
+
+div.collection-detail {
+  display: none;
+}
+
+div.collection-detail table tr .collection-detail-key {
+  font-size: 1.15rem;
+  padding-right: 3px;
+  font-family: "gineso-condensed", sans-serif;
+  vertical-align: text-top;
+  color: black;
+  font-weight: 400;
+}
+
+div.collection-detail table tr .collection-detail-value {
+  font-size: 1rem;
+  font-family: "Acherus", sans-serif;
+  font-weight: 400;
+  text-align: left;
+  vertical-align: text-top;
+  color: black;
+}
+
+td.collection-detail-value div span.list-unstyled {
+  display: block;
+}
+
+.archive-item-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3em;
+}
+.archive-item-tags.multi {
+  display: block;
+  .list-unstyled {
+    display: block;
+  }
+}
+
+a.more-link {
+  margin-left: 10px;
+  color: var(--hokieOrange);
+}
+
+.pagination-section {
+  font-family: "gineso-condensed", sans-serif;
+  font-size: 1.1em;
+  text-align: right;
+}
+
+.pagination-text {
+  padding: 5px 3.5px 5px 0px;
+}
+
+.pagination-text p {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.pagination-section .ui.button {
+  font-family: "gineso-condensed", sans-serif;
+  font-weight: 500;
+  padding: 10px;
+  border: solid 1px #707070;
+  background-color: #f8f8f8;
+  color: #000000;
+}
+
+.pagination-section .fa-angle-double-right,
+.pagination-section .fa-angle-double-left {
+  transform: translateY(1px);
+}
+
+@media (min-width: 768px) {
+  div.collection-detail {
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+
+  div.collection-img img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  div.collection-details {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 300px);
+  }
+
+  div.collection-details h3 {
+    font-size: 1.25rem;
+    font-family: "gineso-condensed", sans-serif;
+    margin-bottom: 0.25rem;
+  }
+
+  div.collection-img {
+    display: inline-block;
+    margin-right: 30px;
+  }
+}

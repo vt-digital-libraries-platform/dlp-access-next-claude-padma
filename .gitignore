@@ -1,0 +1,47 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+.next/
+dist/
+
+# production
+/.next
+
+# misc
+.DS_Store
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# env
+.env
+.env*
+set-eb-env.sh
+aws-exports.js
+# System/IDE
+.DS_Store
+*.log
+.vscode/
+.idea/
+
+# editor
+.vscode/
+.idea/
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+
+# AWS/Amplify
+src/aws-exports.js
+src/amplifyconfiguration.json
+amplify/team-provider-info.json
+amplify/backend-config.json
+amplify/#current-cloud-backend/
+amplify/.config/
+amplify/.awscloudformation/
+amplify/.temp/
+
+logs

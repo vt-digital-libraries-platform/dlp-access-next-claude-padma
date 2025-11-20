@@ -1,0 +1,30 @@
+// VT Color Variables - Foundation
+:root {
+  // Primary VT Brand Colors
+  --hokieMaroon: #861f41;
+  --hokieMaroonHover: #4c0000;
+  --hokieOrange: #c64600;
+  --hokieOrangeHover: #7a2b00;
+  
+  // Neutral Colors
+  --light-gray: #faf9fa;
+  --dark-gray: #75787b;
+  --darker-gray: #555;
+  --link-blue: #007bff;
+  
+  // Theme
+  --themeHighlightColor: #861f41;
+  
+  // Typography
+  --titleFontSize: 40px;
+  --sponsorsColor: #75787b;
+}
+
+// SCSS Variables for use in calculations
+$hokieMaroon: #861f41;
+$hokieMaroonHover: #4c0000;
+$hokieOrange: #c64600;
+$hokieOrangeHover: #7a2b00;
+$lightGray: #faf9fa;
+$darkGray: #75787b;
+$darkerGray: #555;

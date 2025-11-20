@@ -1,0 +1,33 @@
+.social-buttons-wrapper-box {
+  background-color: var(--light-gray);
+  margin-bottom: 30px;
+}
+
+div.social-buttons-wrapper-box
+  div.accordion.ui
+  div.content
+  .social-buttons-section {
+  padding: 0px 20px 20px 20px;
+}
+
+.social-buttons-wrapper-line .line {
+  border-top: 1px solid var(--dark-gray);
+  padding-bottom: 10px;
+}
+
+.social-buttons-section h3,
+.social-buttons-wrapper-box h3 {
+  font-family: "gineso-condensed", sans-serif;
+  font-size: 1.3125rem;
+  font-weight: 500;
+}
+
+.social-buttons-wrapper-line h3 {
+  font-family: "gineso-condensed", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+.social-buttons-section button {
+  margin-right: 20px;
+  margin-bottom: 10px;
+}

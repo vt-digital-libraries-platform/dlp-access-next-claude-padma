@@ -1,0 +1,29 @@
+.facet-header {
+  cursor: pointer;
+  border: solid 1px #f2f2f2;
+  padding: 10px;
+  background-color: #707070;
+  color: #000000;
+}
+
+.facet-listing {
+  cursor: pointer;
+  padding: 0px 10px 10px 10px;
+}
+
+.all-less .more,
+.all-less .less,
+.all-less .more:hover,
+.all-less .less:hover,
+.all-less .more:visited,
+.all-less .less:visited {
+  display: inline-block;
+  color: var(--hokieOrange);
+  border: none;
+  background-color: transparent;
+}
+
+.scroll {
+  height: 200px;
+  overflow: scroll;
+}

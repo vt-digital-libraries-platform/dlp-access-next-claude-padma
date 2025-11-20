@@ -1,0 +1,59 @@
+.citation {
+  width: 100%;
+  font-family: "Acherus", sans-serif;
+  position: relative;
+}
+
+.citation .citation-tab {
+  font-family: "gineso-condensed", sans-serif;
+  font-size: 1.05rem;
+  text-transform: none;
+}
+
+.citation .citation-tab-content {
+  padding: 1rem 0.5rem 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.citation .citation-tab-content .copy-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.citation .citation-tab-content .copy-button-container .heading {
+  font-family: "Acherus", sans-serif !important;
+  font-weight: 500;
+  margin: 0 !important;
+}
+
+.citation .citation-tab-content .copy-button-container .citation-copy-button {
+  font-size: 13px;
+  padding: 5px 10px;
+  border-radius: 0.2rem;
+}
+
+.citation .citation-tab-content .citation-text {
+  padding: 0.5rem;
+  line-height: 1.35rem;
+}
+
+.citation .citation-tab-content .citation-text a {
+  font-family: "Acherus", sans-serif !important;
+  font-size: 14px !important;
+}
+
+.citation .citation-tab-content pre {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  background-color: #f8f8f8;
+  font-family: monospace;
+}
+
+.citation .citation-text .title {
+  font-style: italic;
+}

@@ -1,0 +1,66 @@
+.collection-browse-wrapper {
+  padding: 40px 0 40px 0;
+}
+
+.collection-browse-wrapper img.card-img-top {
+  height: 210px;
+}
+
+div.collection-browse-header {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+div.collection-browse-header h1.list-type {
+  font-family: "gineso-condensed", sans-serif;
+  font-size: 2.1875rem;
+}
+
+.collection-browse-wrapper .navbar {
+  width: 100%;
+  margin-bottom: 15px;
+  background-color: var(--light-gray);
+}
+
+.collection-view-options {
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.collection-filters .form-group {
+  display: block;
+  font-family: "Acherus", sans-serif;
+}
+
+.collection-filters div.form-group label {
+  color: var(--themeHighlightColor);
+  display: block;
+}
+
+.collection-filters {
+  width: 100%;
+}
+.collection-filters div.form-group div.ui.selection.dropdown {
+  width: 100%;
+}
+
+div.collection-browse-wrapper div.container div.row div.gallery-item {
+  max-width: 380px !important;
+}
+
+@media (min-width: 992px) {
+  .collection-filters {
+    width: initial;
+  }
+  .collection-filters .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    padding-right: 10px;
+  }
+
+  .collection-view-options {
+    width: initial;
+    padding-top: 30px;
+  }
+}

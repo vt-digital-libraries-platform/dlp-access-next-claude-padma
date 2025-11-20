@@ -1,0 +1,374 @@
+// Collection Page Styles - CSS Module
+// Uses CSS variables defined in globals.scss
+
+// Page Container
+.pageContainer {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+// Loading State
+.loadingContainer {
+  padding: 2rem;
+  text-align: center;
+  
+  h2 {
+    font-family: "gineso-condensed", sans-serif;
+    color: var(--hokieMaroon);
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    color: var(--medium-gray);
+    
+    code {
+      background-color: var(--light-gray);
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-family: monospace;
+    }
+  }
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid var(--light-gray);
+  border-top-color: var(--hokieOrange);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 1rem auto 0;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+// Error State
+.errorContainer {
+  padding: 2rem;
+  text-align: center;
+  
+  h1 {
+    font-family: "gineso-condensed", sans-serif;
+    color: var(--hokieMaroon);
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    color: var(--medium-gray);
+    margin-bottom: 1.5rem;
+    
+    code {
+      background-color: var(--light-gray);
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-family: monospace;
+    }
+  }
+}
+
+.backButton {
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  background-color: var(--hokieOrange);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-family: "Acherus", sans-serif;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+  
+  &:hover {
+    background-color: var(--hokieOrangeHover);
+  }
+}
+
+// Footer Note
+.footerNote {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 2px solid var(--light-gray);
+  text-align: center;
+  color: var(--medium-gray);
+  font-size: 0.9rem;
+  
+  p {
+    line-height: 1.6;
+  }
+}
+
+.navRow {
+  background-color: var(--light-gray);
+  padding: 10px 15px;
+  margin-bottom: 20px;
+}
+
+.topContentRow {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  
+  @media (min-width: 768px) {
+    grid-template-columns: 300px 1fr;
+  }
+}
+
+.collectionImgCol {
+  display: none;
+  
+  @media (min-width: 768px) {
+    display: block;
+    height: 300px;
+    text-align: center;
+    
+    img {
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+.collectionTitle {
+  font-family: "gineso-condensed", sans-serif;
+  font-size: 1.563rem;
+  font-weight: 400;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.subcollectionTitle {
+  font-family: "gineso-condensed", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.postHeading {
+  font-family: "gineso-condensed", sans-serif;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--dark-gray);
+  
+  .itemCount::after,
+  .creator::after {
+    content: "\00a0\00a0•\00a0\00a0";
+  }
+}
+
+.description {
+  padding: 15px 0 25px 0;
+  font-family: "Acherus", sans-serif;
+  line-height: 1.6;
+  
+  h2 {
+    font-family: "gineso-condensed", sans-serif;
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+  }
+  
+  .more,
+  .less {
+    display: inline-block;
+    color: var(--hokieOrange);
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    font-size: inherit;
+    text-decoration: underline;
+    
+    &:hover {
+      color: var(--hokieOrangeHover);
+    }
+  }
+  
+  &.trunc .less {
+    display: none;
+  }
+  
+  &.full .more {
+    display: none;
+  }
+}
+
+.feedLinks {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-top: 15px;
+  margin-bottom: 0;
+  padding-left: 0;
+  
+  @media (min-width: 992px) {
+    border-bottom: 1px solid var(--dark-gray);
+    padding-bottom: 40px;
+  }
+  
+  li {
+    margin: 0 10px 10px 0;
+    height: 40px;
+    display: flex;
+    
+    &.customBadge {
+      border: 1px solid var(--dark-gray);
+      border-radius: 10px;
+      
+      img {
+        margin-right: 10px;
+      }
+    }
+    
+    img {
+      height: 100%;
+      width: auto;
+    }
+  }
+  
+  a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    transition: box-shadow 0.2s ease;
+    
+    &.borderSquare {
+      border-radius: 6px;
+    }
+    
+    &.borderCurved {
+      border-radius: 10px;
+    }
+    
+    &:hover,
+    &:active,
+    &:focus {
+      box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.4);
+    }
+  }
+}
+
+// Collection Items Grid
+.itemsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 20px 0;
+}
+
+.itemCard {
+  background: white;
+  border: 1px solid var(--light-gray);
+  border-radius: 4px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+  }
+  
+  .itemImage {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background-color: var(--light-gray);
+  }
+  
+  .itemContent {
+    padding: 1rem;
+    
+    h3 {
+      font-family: "gineso-condensed", sans-serif;
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      color: var(--hokieMaroon);
+    }
+    
+    p {
+      font-family: "Acherus", sans-serif;
+      font-size: 0.875rem;
+      color: var(--dark-gray);
+      line-height: 1.4;
+    }
+  }
+}
+
+// Metadata Section
+.metadataSection {
+  background-color: var(--light-gray);
+  padding: 2rem;
+  margin-top: 3rem;
+  border-radius: 8px;
+  
+  h2 {
+    font-family: "gineso-condensed", sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--hokieMaroon);
+  }
+  
+  .metadataGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .metadataItem {
+    dt {
+      font-family: "gineso-condensed", sans-serif;
+      font-weight: 600;
+      color: var(--darker-gray);
+      margin-bottom: 0.25rem;
+    }
+    
+    dd {
+      font-family: "Acherus", sans-serif;
+      color: var(--dark-gray);
+      margin-left: 0;
+    }
+  }
+}
+
+// Pagination Controls
+.paginationControls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+  
+  button {
+    background-color: var(--hokieMaroon);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Acherus", sans-serif;
+    transition: background-color 0.2s ease;
+    
+    &:hover:not(:disabled) {
+      background-color: var(--hokieMaroonHover);
+    }
+    
+    &:disabled {
+      background-color: var(--dark-gray);
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
+  }
+  
+  span {
+    font-family: "Acherus", sans-serif;
+    color: var(--darker-gray);
+  }
+}

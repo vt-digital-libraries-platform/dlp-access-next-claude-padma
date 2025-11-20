@@ -1,0 +1,17 @@
+# Keep EB source bundle small and fast to upload
+.git
+.gitignore
+README.md
+docs/
+cypress/
+**/*.map
+.next/cache
+npm-debug.log
+**/.DS_Store
+*.log
+node_modules/
+.vscode/
+.idea/
+
+# IMPORTANT: Include aws-exports.js (override .gitignore)
+!aws-exports.js
