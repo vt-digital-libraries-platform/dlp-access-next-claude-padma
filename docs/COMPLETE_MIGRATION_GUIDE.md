@@ -9,9 +9,9 @@
 1. [Project Overview](#-project-overview)
 2. [What is Migration?](#-what-is-migration)
 3. [Why We Migrated](#-why-we-migrated)
-4. [Foundation Setup](#-foundation-setup)
+4. [Foundation Setup](#-🏗️-foundation-setup)
 5. [Navigation & Bug Fixes](#-navigation--bug-fixes)
-6. [Static Pages & Hero Banner](#-static-pages--hero-banner)
+6. [Static Pages & Hero Banner](#-🖼️-static-pages--hero-banner)
 7. [Documentation & Deployment](#-documentation--deployment)
 8. [Key Concepts Explained](#-key-concepts-explained)
 9. [Common Issues & Solutions](#-common-issues--solutions)
@@ -109,7 +109,7 @@ Page becomes interactive
 
 ---
 
-## Foundation Setup
+## 🏗️ Foundation Setup
 
 ### Goal
 
@@ -565,7 +565,7 @@ PORT=3001 npm start
 
 ---
 
-## Static Pages & Hero Banner
+## 🖼️ Static Pages & Hero Banner
 
 ### Goal
 
